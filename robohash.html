@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="myFunction()">Generate your robotar</button>
+
+<p id="demo"></p>
+<img id="img">
+<script>
+function myFunction() {
+  var src = "https://robohash.org/" + prompt("Please enter your name");
+  console.log(src);
+  if (src != null) {
+    var img = document.getElementById('img');
+    img.setAttribute('src',src);
+  }
+}
+</script>
+
+</body>
+</html>
