@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html>
-<body>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-<button onclick="myFunction()">Generate your robotar</button>
+    </head>
+    <body class="container">
+        <div class="panel panel-primary">
+            <div class="panel-heading"><div style="text-align: center;">
+                <button class="btn btn-success btn-lg"  onclick="myFunction()">Generate your robotar
+                </button></div></div>
+            <div class="panel-body"><div style="text-align: center;"><img class="img-thumbnail" id="img"></div></div>
+          </div>
+        <script>
+            function myFunction() {
+                var src = "https://robohash.org/" + prompt("Please enter your name");
+                console.log(src);
+                if (src != null) {
+                    var img = document.getElementById('img');
+                    img.setAttribute('src',src);
+                }
+            }
+        </script>
 
-<p id="demo"></p>
-<img id="img">
-<script>
-function myFunction() {
-  var src = "https://robohash.org/" + prompt("Please enter your name");
-  console.log(src);
-  if (src != null) {
-    var img = document.getElementById('img');
-    img.setAttribute('src',src);
-  }
-}
-</script>
-
-</body>
+    </body>
 </html>
