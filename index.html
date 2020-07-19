@@ -1,27 +1,176 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Myportfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="pages" id="p1">
+      <nav style="background-color: rgb(248, 231, 134);">
+        <div class="navd"><a class="navs" href="#p1">Home</a></div>
+        <div class="navd"><a class="navs" href="#p2">projects</a></div>
+        <div class="navd"><a class="navs" href="#p3">Extras</a></div>
+        <div class="navd"><a class="navs" href="#p4">Contacts</a></div>
+      </nav>
+      <div id="contents">
+        <div id="cc">
+          <p style="font-size: 2.5rem;">Avinash's Portfolio</p>
+          <p style="font-size: 0.8rem; padding-top:2rem">THE BEST WAY TO LEARN IS<div style="color: black;font-size: 0.8rem;">TO CREATE</div></p>
+        </div>
+      </div>
+    </div>
+    <div class="pages" id="p2">
+           <div id="projectcontainer">
+            <div class="projects">
+                <div style="margin: 1rem;text-align:center">
+                    <h2>IoT irrigator</h2>
+                    <a href="https://iotirrigator.herokuapp.com/" target="_blank" ><img style="width: 4rem;padding-top:1rem;" src="link.png">
+                    </a>
+                   
+                    <p class="links" ><a href=" https://github.com/avint/Iot_Irrigator" class="codelinks">code</a></p>
 
-    </head>
-    <body class="container">
-        <div class="panel panel-primary">
-            <div class="panel-heading"><div style="text-align: center;">
-                <button class="btn btn-success btn-lg"  onclick="myFunction()">Generate your robotar
-                </button></div></div>
-            <div class="panel-body"><div style="text-align: center;"><img class="img-thumbnail" id="img"></div></div>
-          </div>
-        <script>
-            function myFunction() {
-                var src = "https://robohash.org/" + prompt("Please enter your name");
-                console.log(src);
-                if (src != null) {
-                    var img = document.getElementById('img');
-                    img.setAttribute('src',src);
-                }
-            }
-        </script>
+                </div>
+                
+            </div>
+            <div class="projects">
+                <div style="margin: 1rem;text-align:center">
+                    <h2>Comments CRUD webapp</h2>
+                    <a href="https://mycru.herokuapp.com/" target="_blank" ><img style="width: 4rem;padding-top:2rem;" src="link.png">
+                    </a>
+                    <p  class="links" ><a href=" https://github.com/avint/CRUD" class="codelinks">code</a></p>
+                </div>
+                
+            </div>
+            <div class="projects">
+                <div style="margin: 1rem;text-align:center">
+                    <h2>AI gesture gaming system</h2>
+                    <a href="https://prozone.herokuapp.com/" target="_blank" ><img style="width: 4rem;padding-top:2rem;" src="link.png">
+                    </a>
+                    <p class="links" ><a href="https://github.com/avint/Gesture-gaming-using-LSTM-and-CNN" target="_blank" class="codelinks">code</a></p>
+                </div>
+                
+            </div>
+            <div class="projects">
+                <div style="margin: 1rem;text-align:center">
+                    <h2>Websites</h2>
+                    <ul>
+                        <li><a href="https://audiotodoc.herokuapp.com/" target="_blank">Audio to document webapp</a></li>
+                        <p class="links" ><a href="https://github.com/avint/audiotodoc-v2" target="_blank" class="codelinks">code</a></p>
+                        <li><a href="https://avint.github.io/" target="_blank" >Robotar</a></li>
+                        <p class="links" ><a href="https://github.com/avint/avint" target="_blank"class="codelinks" >code</a></p>
+                    </ul>
+                    
+                </div>
+                
+            </div>
+            <div class="projects">
+                <div style="margin: 1rem;text-align:center">
+                    <h2>Real time object tracking robotic arm</h2>
+                    
+                    <a href="https://drive.google.com/file/d/1-0mNoy3bfpTSHA51EWkiIl7M03xEoRBW/view" target="_blank" ><img style="width: 4rem;padding-top:2rem;" src="link.png">
+                    </a>
+                </div>
+                
+            </div>
+            <div class="projects">
+                <div style="margin: 1rem;text-align:center">
+                    <h2>Secured & automated vechicle billing system</h2>
+                    
+                    <a href="https://github.com/avint/miniproject1" target="_blank" ><img style="width: 4rem;padding-top:2rem;" src="link.png">
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="pages" id="p3">
+        <div id="p3head">
+            <h2></h2>
+        </div>
+        <div id="phead">
+            <ul >
+                <h2 style="margin-bottom: 1rem;margin-top:0.8rem;">Publications</h2>
+                <li style="font-size:1rem;margin-bottom: 0.5rem;">A Dual 3square Nibble Specific Cipher Model for RGB Images using Lorenz Attractor</li>
+                <p class="conference">2nd International Conference on Advances in Electrical and Computer Technologies</p>
+                <li style="font-size: 1rem;margin-bottom: 0.5rem;">A Crypto Model for Confuse Cum Diffuse RGB Images: A Near Zero Correlation Approach</li>
+                <p class="conference">4th International Conference on Inventive Communication and Computational Technologies</p>
+            </ul>
+            <div>
+                <h2 style="margin-bottom: 1rem;margin-top:0.8rem;">Workshops</h2>
+                <div style="margin-bottom: 1rem;">
+                    <div style="display:inline;">Feb 19  .</div>
+                    <div style="display:inline;color:rgb(192, 154, 27);";> Probe, Workshop on IOT with psoc organised by CISCO .</div>
+                    <div style="display:inline;">  NIT trichy </div>
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <div style="display:inline;">Feb 19  .</div>
+                    <div style="display:inline;color:rgb(192, 154, 27);";> Pragyan, Workshop on Machine learning organised by MICROSOFT .</div>
+                    <div style="display:inline;">  NIT trichy </div>
+                </div>
+            </div>
+            <div>
+                <h2 style="margin-bottom: 0.5rem;margin-top:0.8rem;">Courses</h2>
+                <div style="margin-bottom: 0.5rem;">
+                    <div style="display:inline;">July 20  .</div>
+                    <div style="display:inline;color:rgb(192, 154, 27);";> RESTful API with HTTP and JavaScript & Build Your first React Website  .</div>
+                    <div style="display:inline;">   Coursera Project network </div>
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <div style="display:inline;">June 20  .</div>
+                    <div style="display:inline;color:rgb(192, 154, 27);";> Getting Started with AWS Machine Learning  .</div>
+                    <div style="display:inline;">  Coursera/AWS Training and Certification </div>
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <div style="display:inline;">June 20  .</div>
+                    <div style="display:inline;color:rgb(192, 154, 27);";> Industrial IoT on Google Cloud Platform  .</div>
+                    <div style="display:inline;">  Coursera/Google cloud </div>
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <div style="display:inline;">June 20  .</div>
+                    <div style="display:inline;color:rgb(192, 154, 27);";> Cloud Computing Basics (Cloud 101)  .</div>
+                    <div style="display:inline;">  Coursera/LearnQuest </div>
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <div style="display:inline;">May 20  .</div>
+                    <div style="display:inline;color:rgb(192, 154, 27);";> Creating API’s with Django REST framework  .</div>
+                    <div style="display:inline;">  Udemy </div>
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <div style="display:inline;">May 20  .</div>
+                    <div style="display:inline;color:rgb(192, 154, 27);";> Career edge-knockdown the lockdown  .</div>
+                    <div style="display:inline;">  TCS ion </div>
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <div style="display:inline;">April 20  .</div>
+                    <div style="display:inline;color:rgb(192, 154, 27);";> Career skills  .</div>
+                    <div style="display:inline;">  TCS ion </div>
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <div style="display:inline;">Jan 20  .</div>
+                    <div style="display:inline;color:rgb(192, 154, 27);";> Full-stack web-development boot camp  .</div>
+                    <div style="display:inline;">  Udemy </div>
+                </div>
+            </div>
+        </div>
 
-    </body>
+    </div>
+    <div class="pages" id="p4">
+        <div style="padding-top: 30vh;" id="conts">
+
+            <a href="https://github.com/avint" target="_blank" ><img src="git.png"></a>
+            <a href="https://www.linkedin.com/in/avint8" target="_blank"><img src="linkedin.png"></a>
+            <a href="resume.pdf" download><img src="resume.png" target="_blank"></a>
+
+        </div>
+        <div id="ph">
+            <h2><i class="material-icons">call</i>+91-7094234415</h2>
+            <h2><i class="material-icons">email</i> avint8@gmail.com</h2>
+        </div>
+
+    </div>
+  </body>
+  <script src="scripts.js"></script>
 </html>
