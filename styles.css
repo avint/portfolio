@@ -19,13 +19,13 @@ nav {
   justify-content: space-evenly;
 }
 .navs {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: rgb(128, 101, 16);
   font-style: normal;
   text-decoration: none;
 }
 .navs:hover {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: rgb(172, 136, 18);
   font-style: normal;
   text-decoration: none;
@@ -70,7 +70,7 @@ nav {
 }
 @media only screen and (max-width: 800px) {
   .navs {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     color: rgb(192, 154, 27);
     font-style: normal;
     text-decoration: none;
